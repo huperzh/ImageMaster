@@ -15,6 +15,9 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+public slots:
+    void openImage();
+
 private:
     Ui::Widget *ui;
 };

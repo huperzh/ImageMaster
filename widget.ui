@@ -15,10 +15,9 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,1">
    <item>
-    <widget class="WImage" name="widget" native="true">
+    <widget class="WImage" name="wimage" native="true">
      <property name="styleSheet">
-      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(116, 235, 213, 255), stop:1 rgba(172, 182, 229, 255));
-</string>
+      <string notr="true">background-color: rgba(116, 235, 213, 255);</string>
      </property>
     </widget>
    </item>
@@ -62,7 +61,7 @@
      <property name="title">
       <string>工具</string>
      </property>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="openImage">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -94,5 +93,25 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>openImage</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>openImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>875</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>868</x>
+     <y>-29</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openImage()</slot>
+ </slots>
 </ui>
